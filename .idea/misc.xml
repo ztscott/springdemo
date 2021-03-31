@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/Desktop/java/Springmvc/源码/ch07-ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/hello-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/SSM" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/simple/first_spring/pom.xml" />
+        <option value="$PROJECT_DIR$/simple/spring_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/simple/spring_aop_aspectJ/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_aop_aspectJ/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-transcation/pom.xml" />
+        <option value="$PROJECT_DIR$/plc/pom.xml" />
+        <option value="$PROJECT_DIR$/hello-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/SSM/pom.xml" />
+        <option value="$PROJECT_DIR$/springdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/jtgl/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

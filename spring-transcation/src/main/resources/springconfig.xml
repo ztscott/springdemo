@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+<context:property-placeholder location="classpath:jdbc.properties"/>
+    <!-- 声明DataSources，链接数据库-->
+    <bean id="myDataSources" class="com.alibaba.druid.pool.DruidDataSource"
+            init-method="init" destroy-method="close">
+        <property name="url" value="${jdbc.url}"  />  <!--set方法完成设置注入-->
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.passwd}" />
+        <property name="maxActive" value="${jdbc.max}" />
+    </bean>
+
+<!--sqlsessionfactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+            <property name="dataSource" ref="myDataSources"/>
+            <property name="configLocation" value="classpath:mybatis.xml"/>
+
+    </bean>
+
+
+<!--    创建dao对象，使用sqlSesison的getmapper（StudentDao.class）-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!--        指定sqlsessionfactory对象的id-->
+            <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+<!--        指定包名，dao所在的包名，mapperscannerconf会扫描包中所有的接口，每个接口执行一次getmapper（）方法，
+         得到dao对象把其放入spring容器当中。默认名称为接口名首字母小写-->
+            <property name="basePackage" value="com.example.dao"/>
+    </bean>
+
+<!--    声明service-->
+    <bean id="BuyService" class="com.example.service.BuyServiceImpl">
+        <property name="goodsDao" ref="goodsDao"/>
+        <property name="saleDao" ref="saleDao"/>
+    </bean>
+
+<!--使用spring事务-->
+    <bean id="transcationManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="myDataSources"/>
+    </bean>
+<!--    开启事务注解驱动-->
+<tx:annotation-driven transaction-manager="transcationManager"/>
+</beans>

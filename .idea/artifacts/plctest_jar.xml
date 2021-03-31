@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="plctest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/plctest_jar</output-path>
+    <root id="archive" name="plctest.jar">
+      <element id="module-output" name="plctest" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/plctest/src/lib/s7connector-2.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

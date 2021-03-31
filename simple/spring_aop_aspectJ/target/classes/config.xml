@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <bean id="ServiceImpl" class="com.example.ba01.ServiceImpl"/>
+    <bean id="myAspect" class="com.example.ba01.myAspect"/>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/> <!--开启true的时候可以cglib动态代理 -->
+</beans>

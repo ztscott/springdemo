@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--        声明DataSources，链接数据库-->
+    <bean id="myDataSources" class="com.alibaba.druid.pool.DruidDataSource"
+            init-method="init" destroy-method="close">
+        <property name="url" value="jdbc:mysql://localhost:3306/ssm"  />  <!--set方法完成设置注入-->
+        <property name="username" value="root" />
+        <property name="password" value="0503" />
+        <property name="maxActive" value="20" />
+    </bean>
+
+<!--sqlsessionfactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+            <property name="dataSource" ref="myDataSources"/>
+            <property name="configLocation" value="classpath:mybatis.xml"/>
+
+    </bean>
+
+
+<!--    创建dao对象，使用sqlSesison的getmapper（StudentDao.class）-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!--        指定sqlsessionfactory对象的id-->
+            <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+<!--        指定包名，dao所在的包名，mapperscannerconf会扫描包中所有的接口，每个接口执行一次getmapper（）方法，
+         得到dao对象把其放入spring容器当中。默认名称为接口名首字母小写-->
+            <property name="basePackage" value="com.example.dao"/>
+    </bean>
+
+<!--    声明service-->
+    <bean id="StudentService" class="com.example.service.StudentServiceImpl">
+        <property name="studentDao" ref="studentDao"/>
+    </bean>
+
+</beans>

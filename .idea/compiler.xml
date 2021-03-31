@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-mybatis" />
+        <module name="first_spring" />
+        <module name="jtgl" />
+        <module name="spring-transcation" />
+        <module name="spring_annotation" />
+        <module name="Spring_aop_aspectJ" />
+        <module name="hello-springmvc" />
+        <module name="springdemo" />
+        <module name="SSM" />
+        <module name="plc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ch07-ssm" target="1.8" />
+      <module name="first_spring" target="1.8" />
+      <module name="hello-springmvc" target="1.8" />
+      <module name="jtgl" target="1.8" />
+      <module name="plc" target="1.7" />
+      <module name="plcjar" target="1.5" />
+      <module name="spring-mybatis" target="1.8" />
+      <module name="spring-transcation" target="1.8" />
+      <module name="spring_annotation" target="1.8" />
+      <module name="Spring_aop_aspectJ" target="1.8" />
+      <module name="springboot" target="1.8" />
+      <module name="springdemo" target="1.8" />
+      <module name="SSM" target="1.8" />
+      <module name="SSM-hello" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jtgl" options="-parameters" />
+      <module name="springboot" options="-parameters" />
+      <module name="springdemo" options="-parameters" />
+    </option>
+  </component>
+</project>

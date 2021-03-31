@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HSL_PLC/HSL_PLC.iml" filepath="$PROJECT_DIR$/HSL_PLC/HSL_PLC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple/spring_aop_aspectJ/Spring_aop_aspectJ.iml" filepath="$PROJECT_DIR$/simple/spring_aop_aspectJ/Spring_aop_aspectJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple/first_spring/first_spring.iml" filepath="$PROJECT_DIR$/simple/first_spring/first_spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-springmvc/hello-springmvc.iml" filepath="$PROJECT_DIR$/hello-springmvc/hello-springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtgl/jtgl.iml" filepath="$PROJECT_DIR$/jtgl/jtgl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plc/plc.iml" filepath="$PROJECT_DIR$/plc/plc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plctest/plctest.iml" filepath="$PROJECT_DIR$/plctest/plctest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple/simple.iml" filepath="$PROJECT_DIR$/simple/simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mybatis/spring-mybatis.iml" filepath="$PROJECT_DIR$/spring-mybatis/spring-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-transcation/spring-transcation.iml" filepath="$PROJECT_DIR$/spring-transcation/spring-transcation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple/spring_annotation/spring_annotation.iml" filepath="$PROJECT_DIR$/simple/spring_annotation/spring_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springdemo/springdemo.iml" filepath="$PROJECT_DIR$/springdemo/springdemo.iml" />
+    </modules>
+  </component>
+</project>

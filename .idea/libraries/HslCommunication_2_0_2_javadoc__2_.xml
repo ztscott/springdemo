@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="HslCommunication-2.0.2-javadoc (2)">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/HSL_PLC/lib/HslCommunication-2.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/SSM/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hello-springmvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hello-springmvc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jtgl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple/first_spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple/first_spring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple/spring_annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple/spring_annotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple/spring_aop_aspectJ/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple/spring_aop_aspectJ/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transcation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdemo/src/main/java" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,3 @@
+com\example\springboot\SpringbootApplication.class
+com\example\springboot\controller\UserController.class
+com\example\springboot\domain\Student.class
